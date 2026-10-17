@@ -7,7 +7,7 @@ plugins {
 
 group = "cat.freya.alloy"
 
-version = "0.1.0"
+version = "0.1-SNAPSHOT"
 
 description = "Common utilities for KenshinEto's projects"
 
@@ -22,6 +22,10 @@ lodestone {
         url = "https://g.freya.cat/alloy"
         license = License.GPL3
     }
+}
+
+repositories {
+    mavenCentral()
 }
 
 dependencies {
