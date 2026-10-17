@@ -51,7 +51,7 @@ private fun serializeComment(comment: Comment): String {
 }
 
 private fun serializeDeprecated(deprecated: Deprecated): String {
-    return "Warning: This field has been deprecated: ${deprecated.message}"
+    return "# Warning: This field has been deprecated: ${deprecated.message}\n"
 }
 
 private fun <T : Any> serializeClass(instance: T): String {
