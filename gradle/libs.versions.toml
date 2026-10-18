@@ -1,5 +1,5 @@
 [versions]
-lodestone = "0.1-SNAPSHOT"
+lodestone = "0.3-SNAPSHOT"
 jackson = "2.22.3"
 sqlite = "3.53.4.0"
 mysql = "26.7.0"

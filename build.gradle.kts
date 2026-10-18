@@ -1,5 +1,5 @@
-import cat.freya.lodestone.License
 import cat.freya.lodestone.excludeKotlin
+import cat.freya.lodestone.publishing.License
 
 plugins {
     alias(libs.plugins.lodestone)
@@ -12,15 +12,17 @@ version = "0.1-SNAPSHOT"
 description = "Common utilities for KenshinEto's projects"
 
 lodestone {
-    jvm(8)
+    java(8)
+    kotlin()
     detekt()
     spotless()
     publish {
         group = "cat.freya"
         artifact = "alloy"
         author = "KenshinEto"
-        url = "https://g.freya.cat/alloy"
         license = License.GPL3
+        gitRepo = "https://g.freya.cat/alloy"
+        reposilite("https://maven.freya.cat")
     }
 }
 
